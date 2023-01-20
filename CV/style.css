@@ -324,6 +324,7 @@ header .container {
 }
 .works_body_slider:hover {box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.5);}
 .works_body_slider-item {
+	padding: 15px;
 	height: 100%;
 	min-width: 100%;
 	font-size: 35px;
