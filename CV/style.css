@@ -135,7 +135,7 @@ header .container {
 
 .mobile-header {
 	display: none;
-	height: 35px;
+	height: 50px;
 	min-width: 100%;
 	position: fixed;
 	top: 0;
@@ -143,7 +143,7 @@ header .container {
 	z-index: 10;
 	text-align: center;
 	text-transform: uppercase;
-	line-height: 35px;
+	line-height: 50px;
 	font-size: var(--font-medium);
 	color: #eee;
 	background: #111;
@@ -152,14 +152,14 @@ header .container {
 	position: absolute;
 	top: 0;
 	right: 0;
-	font-size: 15px;
-	line-height: 35px;
+	font-size: 30px;
+	line-height: 50px;
 	text-align: center;
-	height: 35px;
-	width: 45px;
+	height: 50px;
+	width: 50px;
 }
 .burger {
-	padding: 45px 10px 10px 10px;
+	padding: 70px 10px 10px 10px;
 	height: 100vh;
 	width: 100%;
 	position: fixed;
@@ -172,12 +172,12 @@ header .container {
 	flex-direction: column;
 	justify-content: start;
 	align-items: end;
-	gap: 10px;
+	gap: 15px;
 	transition: all 0.5s;
 }
 .burger_item {
-	height: 25px;
-	width: 25px;
+	height: 35px;
+	width: 35px;
 	border-radius: 50%;
 	border: 2px solid #eee;
 	transition: all 0.2s;
@@ -191,16 +191,17 @@ header .container {
 	background: #111;
 	color: #fff;
 	text-transform: uppercase;
-	line-height: 23px;
+	line-height: 32px;
 	text-align: center;
-	font-size: 12px;
+	font-size: 16px;
+	font-weight: 500;
 }
 .burger_close {
 	background: #111;
 	color: #eee;
-	line-height: 23px;
+	line-height: 32px;
 	text-align: center;
-	font-size: 15px;
+	font-size: 25px;
 }
 
 .title {
@@ -434,6 +435,9 @@ header .container {
 .contacts_body_column div{
 	margin-bottom: 10px;
 }
+.contacts_body_column:nth-child(1){
+	margin-right: 15px;
+}
 .contacts_body_item {
 	display: block;
 	margin-bottom: 10px;
@@ -449,12 +453,12 @@ header .container {
 
 @media (max-width: 1024px){
 	.container{padding: 0 20px;}
-	header{height: 60px;}
-	.wrapper{padding-top: 82.5px;}
+	header{height: 70px;}
+	.wrapper{padding-top: 96px;}
 	:root{
-		--font-big: 35px;
-		--font-medium: 17px;
-		--font-small: 14px;
+		--font-big: 37.5px;
+		--font-medium: 17.5px;
+		--font-small: 14.5px;
 	}
 	.title {margin-bottom: 7.5px;}
 	.body {margin-bottom: 25px;}
@@ -462,14 +466,15 @@ header .container {
 	.hobbies_body_info{margin-bottom: 17.5px;}
 	.skills_body_items, .hobbies_body_items{gap: 25px;}
 }
+
 @media (max-width: 768px){
 	.container{padding: 0 15px;}
-	header {height: 40px;}
-	.wrapper{padding-top: 55px;}
+	header {height: 60px;}
+	.wrapper{padding-top: 82.5px;}
 	:root{
-		--font-big: 30px;
-		--font-medium: 16px;
-		--font-small: 13px;
+		--font-big: 35px;
+		--font-medium: 17px;
+		--font-small: 14px;
 	}
 	.title {margin-bottom: 5px;}
 	.body {margin-bottom: 20px;}
@@ -495,12 +500,42 @@ header .container {
 	.works_body_track {display: none;}
 	.works_body_track_dot {display: none;}
 }
+
+@media (max-width: 500px){
+	.skills_body_item, .hobbies_body_item{
+		height: 23.75vw;
+		width: 42.75vw;
+		border-radius: 4.75vw;
+	}
+	.donut, .hobbies_donut{
+		height: 19vw;
+		width: 19vw;
+		box-shadow: inset 0 0 0.38vw rgba(0, 0, 0, 0.2);
+	}
+	.donut_dot{
+		height: 1.9vw;
+		width: 1.9vw;
+	}
+	.donut_overflow{
+		height: 15.2vw;
+		width: 15.2vw;
+		line-height: 15.2vw;
+		font-size: 2.85vw;
+	}
+	.skill, .hobbie{
+		height: 19vw;
+		width: 19vw;
+		line-height: 19vw;
+		font-size: 2.85vw;
+	}
+}
+
 @media (max-width: 425px){
-	.wrapper{padding-top: 41.25px;}
+	.wrapper{padding-top: 69px;}
 	:root{
-		--font-big: 25px;
-		--font-medium: 15px;
-		--font-small: 12px;
+		--font-big: 32.5px;
+		--font-medium: 16.5px;
+		--font-small: 13.5px;
 	}
 	.title {margin-bottom: 2.5px;}
 	.body {margin-bottom: 15px;}
